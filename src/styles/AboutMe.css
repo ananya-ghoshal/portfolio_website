@@ -1,0 +1,104 @@
+.aboutMe {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Josefin Sans", sans-serif;
+}
+.aboutMe_card {
+  height: 65%;
+  margin: 5rem;
+  background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+  color: rgb(0, 0, 0);
+  border-radius: 20px;
+  padding: 2.5rem 2.18rem;
+  text-align: center;
+  /* box:shadow:horizontal vertical blur spread-radius color; */
+  box-shadow: 2px 2px 5px 2px rgb(99, 73, 99);
+}
+.aboutMe__img > img {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+}
+.aboutMe__text {
+  margin-top: 1rem;
+}
+.aboutMe__text > h3 {
+  font-size: 1.5rem;
+}
+.skills_header {
+  font-size: 1.75rem;
+  font-style: italic;
+  font-weight: 500;
+  color: rgb(252, 158, 108);
+  margin-top: 3rem;
+}
+.skillSet {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+.skill {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.skill > .skillIcon > img {
+  height: 3rem;
+  width: 2.5rem;
+}
+.skill > .skillIcon > img:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: all 0.2s linear;
+}
+/* styling for phone screen */
+@media only screen and (max-width: 600px) {
+  .aboutMe_card {
+    height: 65%;
+    margin: 2rem;
+    padding: 1rem 1rem;
+  }
+  .aboutMe__img > img {
+    height: 5rem;
+    width: 5rem;
+  }
+  .aboutMe__text {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+  }
+  .aboutMe__text > h3 {
+    font-size: 1rem;
+  }
+  .skills_header {
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+  }
+  .skillSet {
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  .skill {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .skill > .skillIcon > img {
+    height: 2rem;
+    width: 1.5rem;
+  }
+  .skillName {
+    font-size: 0.8rem;
+  }
+}
+/* styling for tablet screen */
+@media only screen and (max-width: 900px) and (min-width: 600px) {
+  .skill > .skillIcon > img {
+    height: 2rem;
+    width: 1.5rem;
+  }
+  .skillName {
+    font-size: 0.8rem;
+  }
+}

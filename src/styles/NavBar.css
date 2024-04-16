@@ -1,0 +1,54 @@
+.navbar {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3rem;
+  padding-left: 1rem;
+  height: 5rem;
+  background-color: #dff7f8;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.navbar__links > button {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+.navbar__links > button:hover {
+  color: rgb(236, 153, 0);
+  transform: scale(1.2);
+  transition: transform 0.2s linear;
+}
+.navbar__links > a > button {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+.navbar__links > a > button:hover {
+  color: rgb(236, 153, 0);
+  transform: scale(1.2);
+  transition: transform 0.2s linear;
+}
+
+/* styling for phone screen  */
+@media only screen and (max-width: 600px) {
+  .navbar {
+    gap: 1rem;
+    padding-left: 0;
+    height: 5rem;
+  }
+  .navbar__links > button {
+    font-size: 1rem;
+    margin-left: 0.5rem;
+  }
+  .navbar__links > a > button {
+    font-size: 1rem;
+    margin-left: 0.5rem;
+  }
+}
