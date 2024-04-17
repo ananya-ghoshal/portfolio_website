@@ -17,6 +17,7 @@
 .homepage__header__name {
   font-size: 8rem;
   font-family: "Dancing Script", cursive;
+  text-shadow: 2px 2px 5px #edd8e2;
 }
 .homepage__header__details {
   font-size: 1.5rem;

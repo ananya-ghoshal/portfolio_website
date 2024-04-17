@@ -23,7 +23,7 @@ function AboutMe() {
             I'm a Computer Science Engineer with 3 years of industry experience.
             <br />
             I've designed,developed, and maintained captivating user interfaces
-            along the way & am paasionate about expanding my learning horizons
+            along the way & am passionate about expanding my learning horizons
             as I go!
           </p>
         </div>
