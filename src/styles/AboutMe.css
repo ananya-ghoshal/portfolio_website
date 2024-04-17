@@ -1,36 +1,35 @@
 .aboutMe {
-  height: 100vh;
-  width: 100vw;
   font-family: "Josefin Sans", sans-serif;
+  line-height: 2rem;
 }
 .aboutMe_card {
   height: 65%;
   margin: 5rem;
-  background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+  background-image: linear-gradient(135deg, #fdfcfb 0%, #ebe4df 100%);
   color: rgb(0, 0, 0);
   border-radius: 20px;
   padding: 2.5rem 2.18rem;
-  text-align: center;
   /* box:shadow:horizontal vertical blur spread-radius color; */
-  box-shadow: 2px 2px 5px 2px rgb(99, 73, 99);
+  box-shadow: 2px 2px 5px 2px rgb(239, 223, 239);
 }
 .aboutMe__img > img {
   height: 10rem;
   width: 10rem;
-  border-radius: 50%;
 }
 .aboutMe__text {
-  margin-top: 1rem;
+  margin: 1rem auto auto auto;
+  max-width: 70ch;
 }
 .aboutMe__text > h3 {
   font-size: 1.5rem;
+  text-align: center;
 }
 .skills_header {
   font-size: 1.75rem;
-  font-style: italic;
   font-weight: 500;
   color: rgb(252, 158, 108);
-  margin-top: 3rem;
+  margin-top: 5rem;
+  text-align: center;
 }
 .skillSet {
   display: flex;

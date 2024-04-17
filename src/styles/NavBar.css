@@ -1,15 +1,12 @@
 .navbar {
-  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 3rem;
-  padding-left: 1rem;
   height: 5rem;
-  background-color: #dff7f8;
   position: sticky;
   top: 0;
-  z-index: 1;
+  background-color: #f9f5f7;
 }
 .navbar__links > button {
   background: none;
@@ -30,6 +27,9 @@
   cursor: pointer;
   margin-left: 1rem;
 }
+.navbar__links > a:link {
+  color: black;
+}
 .navbar__links > a > button:hover {
   color: rgb(236, 153, 0);
   transform: scale(1.2);
@@ -39,9 +39,8 @@
 /* styling for phone screen  */
 @media only screen and (max-width: 600px) {
   .navbar {
-    gap: 1rem;
-    padding-left: 0;
-    height: 5rem;
+    justify-content: space-evenly;
+    gap: 0;
   }
   .navbar__links > button {
     font-size: 1rem;

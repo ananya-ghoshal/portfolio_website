@@ -1,6 +1,5 @@
 import React from "react";
 import "../styles/AboutMe.css";
-import ProfileImage from "../components/profilepicture.jpeg";
 import HTML from "../icons/html.png";
 import CSS from "../icons/css.png";
 import JS from "../icons/js.png";
@@ -12,15 +11,11 @@ import Bootstrap from "../icons/bootstrap.png";
 import Vite from "../icons/vite.png";
 import Jest from "../icons/jest.png";
 import GIT from "../icons/git.png";
-import { Link } from "react-scroll";
 
 function AboutMe() {
   return (
     <section className="aboutMe" id="about">
       <div className="aboutMe_card">
-        <div className="aboutMe__img">
-          <img src={ProfileImage}></img>
-        </div>
         <div className="aboutMe__text">
           <h3>Hello!</h3>
           <br />

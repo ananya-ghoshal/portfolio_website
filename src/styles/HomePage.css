@@ -1,45 +1,45 @@
 .homepage {
-  height: 100vh;
-  width: 100vw;
-  background-image: linear-gradient(#dff7f8, #f8f7dc, #f8d7e6);
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 2fr 2fr;
+  gap: 0.1rem;
+  height: 90vh;
+  background-color: #f9f5f7;
 }
-.homepage__leftGif {
+.homepage__left {
   grid-column: 1/2;
-  height: 100vh;
-}
-.homepage__rightGif {
-  grid-column: 3/4;
-}
-.homepage__rightGif > img {
-  height: 12rem;
-  width: 12rem;
-  margin-left: 4rem;
-  margin-top: 10rem;
-  border-radius: 50%;
-}
-.homepage__header {
-  grid-column: 2/3;
-  margin-top: 7rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
-  font-family: "Sacramento", cursive;
+  justify-content: center;
+  gap: 2rem;
+  margin-left: 2rem;
 }
 .homepage__header__name {
   font-size: 8rem;
   font-family: "Dancing Script", cursive;
 }
 .homepage__header__details {
-  font-size: 2rem;
-  color: #a46b86;
+  font-size: 1.5rem;
+}
+.homepage__right {
+  grid-column: 2/3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-grow: 0;
+}
+.homepage__right > .aboutMe__img > img {
+  border-radius: 50%;
+  height: 15rem;
+  width: 15rem;
 }
 .button__about {
   height: 3rem;
   width: 15rem;
-  background-color: rgb(252, 158, 108);
+  background-color: #613449;
+  color: white;
   border-radius: 20px;
   border-style: none;
   font-size: 1rem;
@@ -49,23 +49,16 @@
   transition: all 0.2s linear;
   cursor: pointer;
   color: antiquewhite;
+  box-shadow: 5px 5px 5px #bda5b0;
 }
 /* styling for phone screen  */
 @media only screen and (max-width: 600px) {
   .homepage {
-    overflow-x: hidden;
-  }
-  .homepage__leftGif {
-    visibility: hidden;
-  }
-  .homepage__rightGif {
-    visibility: hidden;
-  }
-  .homepage__header {
-    margin: 7rem;
-    gap: 0.8rem;
+    display: flex;
+    flex-direction: column;
   }
   .homepage__header__name {
+    margin-top: 5rem;
     font-size: 5rem;
   }
   .homepage__header__details {
@@ -73,6 +66,9 @@
   }
   .button__about {
     width: 7rem;
-    margin-right: 5rem;
+  }
+  .homepage__right > .aboutMe__img > img {
+    height: 10rem;
+    width: 10rem;
   }
 }

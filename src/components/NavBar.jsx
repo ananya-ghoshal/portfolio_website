@@ -21,10 +21,11 @@ function NavBar() {
         </div>
       </Link>
 
-      {/* <div className="navbar__links">
+      <div className="navbar__links">
         {" "}
         <button>Projects</button>
-      </div> */}
+      </div>
+
       <Link to="contact" smooth={true}>
         <div className="navbar__links">
           {" "}
