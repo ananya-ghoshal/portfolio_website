@@ -1,9 +1,23 @@
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px #ebcfdd;
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px #fbb9d9;
+    transform: translatey(-20px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px #ebcfdd;
+    transform: translatey(0px);
+  }
+}
 .homepage {
   display: grid;
   grid-template-columns: 2fr 2fr;
   gap: 0.1rem;
-  height: 90vh;
-  background-color: #f9f5f7;
+  height: 88.5vh;
+  background-image: linear-gradient(to bottom, #f9f5f7, white);
 }
 .homepage__left {
   grid-column: 1/2;
@@ -35,6 +49,9 @@
   border-radius: 50%;
   height: 15rem;
   width: 15rem;
+  box-shadow: 0 5px 15px 0px #b79ca9;
+  transform: translatey(0px);
+  animation: float 3s ease-in-out;
 }
 .button__about {
   height: 3rem;
