@@ -7,9 +7,11 @@
 
 .aboutMe__text {
   background-color: #613449;
-  height: 40%;
+  height: 60%;
   color: white;
   display: block;
+  padding: 2rem;
+  box-shadow: -2px -2px 5px 2px rgb(212, 194, 212);
 }
 .aboutMe__text > p {
   max-width: 70ch;
@@ -20,8 +22,8 @@
   text-align: center;
 }
 .skills_card {
-  height: 55%;
-  margin: -5rem 5rem 5rem 5rem;
+  height: 45%;
+  margin: -15rem 5rem 5rem 5rem;
   background-image: linear-gradient(135deg, #fdfcfb 0%, #ebe4df 100%);
   color: rgb(0, 0, 0);
   border-radius: 20px;
@@ -29,7 +31,7 @@
   /* box:shadow:horizontal vertical blur spread-radius color; */
   box-shadow: 2px 2px 5px 2px rgb(237, 216, 237);
 }
-.skills_header {
+.skills_header > p {
   font-size: 1.75rem;
   font-weight: 500;
   color: rgb(252, 158, 108);
@@ -60,10 +62,11 @@
 /* styling for phone screen */
 @media only screen and (max-width: 600px) {
   .skills_card {
-    margin: -2rem 2rem 2rem 2rem;
+    margin: -5rem 2rem 2rem 2rem;
     padding: 1rem 1rem;
   }
   .aboutMe__text {
+    height: 40%;
     margin-top: 0.5rem;
     font-size: 0.8rem;
   }

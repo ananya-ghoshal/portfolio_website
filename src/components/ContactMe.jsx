@@ -5,7 +5,7 @@ import LinkedinImg from "../icons/linkedin.png";
 
 function ContactMe() {
   return (
-    <section className="ContactMe" id="contact">
+    <div className="ContactMe" id="contact">
       <div className="ContactMe_card">
         <div className="text">
           <h3>Get in Touch</h3>
@@ -25,7 +25,7 @@ function ContactMe() {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 }
 
