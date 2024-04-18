@@ -18,7 +18,7 @@ function HomePage() {
       </div>
       <div className="homepage__right">
         <div className="aboutMe__img">
-          <img src={ProfileImage}></img>
+          <img src={ProfileImage} alt=""></img>
         </div>
         <Link to="aboutMe" smooth={true}>
           <button className="button__about">Know more about me</button>
