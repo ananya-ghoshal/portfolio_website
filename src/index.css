@@ -5,12 +5,7 @@
   padding: 0;
   font-family: sans-serif;
 }
-html,
-body {
-  overflow-x: hidden;
-}
-
-::selection {
+html ::selection {
   background-color: #b79ca9;
   color: #fff;
 }

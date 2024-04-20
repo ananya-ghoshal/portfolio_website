@@ -1,16 +1,16 @@
 import React from "react";
 import "../styles/AboutMe.css";
-import HTML from "../icons/html.png";
-import CSS from "../icons/css.png";
-import JS from "../icons/js.png";
-import ReactJS from "../icons/react.png";
-import Redux from "../icons/redux.png";
-import TailwindCSS from "../icons/tailwind.png";
-import SaSS from "../icons/sass.png";
-import Bootstrap from "../icons/bootstrap.png";
-import Vite from "../icons/vite.png";
-import Jest from "../icons/jest.png";
-import GIT from "../icons/git.png";
+import HTML from "../icons/html.svg";
+import CSS from "../icons/css.svg";
+import JS from "../icons/js.svg";
+import ReactJS from "../icons/react.svg";
+import Redux from "../icons/redux.svg";
+import TailwindCSS from "../icons/tailwind.svg";
+import SaSS from "../icons/sass.svg";
+import Bootstrap from "../icons/bootstrap.svg";
+import Vite from "../icons/vite.svg";
+import Jest from "../icons/jest.svg";
+import GIT from "../icons/git.svg";
 
 function AboutMe() {
   return (

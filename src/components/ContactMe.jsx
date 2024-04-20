@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/ContactMe.css";
-import GithubImg from "../icons/git.png";
-import LinkedinImg from "../icons/linkedin.png";
+import GithubImg from "../icons/git.svg";
+import LinkedinImg from "../icons/linkedin.svg";
 
 function ContactMe() {
   return (
