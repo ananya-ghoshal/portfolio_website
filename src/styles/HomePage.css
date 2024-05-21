@@ -12,6 +12,46 @@
     transform: translatey(0px);
   }
 }
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translate(-10rem);
+  }
+
+  80% {
+    transform: translate(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translate(10rem);
+  }
+
+  80% {
+    transform: translate(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInButton {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
 .homepage {
   display: grid;
   grid-template-columns: 2fr 2fr;
@@ -27,6 +67,7 @@
   justify-content: center;
   gap: 2rem;
   margin-left: 2rem;
+  animation: moveInLeft 2s ease-in-out;
 }
 .homepage__header__name {
   font-size: 8rem;
@@ -44,6 +85,7 @@
   justify-content: center;
   gap: 2rem;
   flex-grow: 0;
+  animation: moveInRight 2s ease-in-out;
 }
 .homepage__right > .aboutMe__img > img {
   border-radius: 50%;
