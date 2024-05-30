@@ -12,7 +12,7 @@ function HomePage() {
         <span className="homepage__header__name">I'm Ananya</span>
         <br />
         <span className="homepage__header__details">
-          <Typewriter text="a frontend developer !" delay={100} />
+          <Typewriter text="a frontend developer !" delay={200} />
         </span>
         <br />
       </div>

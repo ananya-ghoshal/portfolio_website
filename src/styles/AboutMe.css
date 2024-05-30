@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap");
+
 .aboutMe {
   font-family: "Josefin Sans", sans-serif;
   line-height: 2rem;
@@ -20,6 +22,7 @@
 .aboutMe__text > h3 {
   font-size: 1.5rem;
   text-align: center;
+  font-family: "Poetsen One", sans-serif;
 }
 .skills_card {
   height: 45%;
@@ -29,14 +32,14 @@
   border-radius: 20px;
   padding: 2.5rem 2.18rem;
   /* box:shadow:horizontal vertical blur spread-radius color; */
-  box-shadow: 2px 2px 5px 2px rgb(237, 216, 237);
+  box-shadow: 2px 2px 5px 2px rgb(234, 226, 226);
 }
 .skills_header > p {
   font-size: 1.75rem;
-  font-weight: 500;
   color: rgb(252, 158, 108);
   margin-top: 5rem;
   text-align: center;
+  font-family: "Poetsen One", sans-serif;
 }
 .skills_header > p:hover {
   cursor: pointer;
@@ -66,21 +69,20 @@
 }
 /* styling for phone screen */
 @media only screen and (max-width: 600px) {
-  .skills_card {
-    margin: -5rem 2rem 2rem 2rem;
-    padding: 1rem 1rem;
-  }
   .aboutMe__text {
     height: 40%;
-    margin-top: 0.5rem;
+    margin-top: 8rem;
     font-size: 0.8rem;
   }
   .aboutMe__text > h3 {
     font-size: 1rem;
   }
-  .skills_header {
-    font-size: 1.2rem;
-    margin-top: 1.5rem;
+  .skills_card {
+    margin: -3rem 2rem 2rem 2rem;
+    padding: 0.1rem;
+  }
+  .skills_card {
+    height: 27rem;
   }
   .skillSet {
     gap: 1rem;

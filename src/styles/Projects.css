@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap");
+.project-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+.project-list .title {
+  color: rgb(252, 158, 108);
+  font-size: 1.75rem;
+  font-family: "Poetsen One", sans-serif;
+}
+.title:hover {
+  cursor: pointer;
+  transform: rotate(5deg) scale(1.3);
+  transition: transform 0.2s linear;
+}
+.project-card {
+  width: 60%;
+  margin: auto;
+  padding: 2rem;
+  background-image: linear-gradient(90deg, #fff8fc, white);
+  outline: rgb(238, 211, 238) 2px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px 2px rgb(237, 216, 237);
+  display: flex;
+  gap: 2rem;
+}
+.project-card img {
+  height: 20rem;
+  width: 30rem;
+}
+.project-card img:hover {
+  transform: scale(1.1);
+  transition: 0.2s linear transform;
+  cursor: pointer;
+}
+.project-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-wrap: wrap;
+  line-height: 1.4rem;
+}
+.tech-skills h5 {
+  color: rgb(252, 158, 108);
+}
+
+@media only screen and (max-width: 599px) {
+  .project-list {
+    margin-top: 4rem;
+    gap: 1rem;
+  }
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+  .project-card img {
+    height: 10rem;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 899px) and (min-width: 600px) {
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+  .project-card img {
+    height: 10rem;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1200px) and (min-width: 900px) {
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+  .project-card img {
+    height: 10rem;
+    width: 100%;
+  }
+}
