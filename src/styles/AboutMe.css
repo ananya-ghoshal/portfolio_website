@@ -64,8 +64,8 @@
 }
 .skill > .skillIcon > img:hover {
   cursor: pointer;
-  transform: scale(1.2);
-  transition: all 0.2s linear;
+  transform: rotate(360deg);
+  transition: transform 0.3s linear;
 }
 /* styling for phone screen */
 @media only screen and (max-width: 600px) {
