@@ -3,10 +3,6 @@ import "../styles/Projects.css";
 import Project from "./Project";
 import project1 from "../../dist/assets/myblog.png";
 import project2 from "../../dist/assets/gosolo.png";
-import HTML from "../icons/html.svg";
-import CSS from "../icons/css.svg";
-import JS from "../icons/js.svg";
-import SaSS from "../icons/sass.svg";
 
 function ProjectList() {
   return (

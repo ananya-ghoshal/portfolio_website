@@ -1,6 +1,5 @@
 import React from "react";
 import "../styles/Projects.css";
-import project1 from "../../dist/assets/myblog.png";
 
 function Project({ props }) {
   return (
