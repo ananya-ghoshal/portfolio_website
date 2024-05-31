@@ -3,6 +3,10 @@ import "../styles/Projects.css";
 import Project from "./Project";
 import project1 from "../images/myblog.png";
 import project2 from "../images/gosolo.png";
+import HTML from "../icons/html.svg";
+import CSS from "../icons/css.svg";
+import JS from "../icons/js.svg";
+import SaSS from "../icons/sass.svg";
 
 function ProjectList() {
   return (
@@ -14,6 +18,12 @@ function ProjectList() {
           title: "My Blog",
           link: "https://ananya-blog.pages.dev/",
           text: "Personal blog website built using HTML,CSS and Vanilla JS. Added interactive features &animations using CSS and functionalities using vanilla JS.",
+          skill1: "HTML",
+          skill1Img: HTML,
+          skill2: "CSS",
+          skill2Img: CSS,
+          skill3: "JS",
+          skill3Img: JS,
         }}
       />
       <Project
@@ -22,6 +32,12 @@ function ProjectList() {
           title: "Travel Website",
           link: "https://go-solo.pages.dev/",
           text: "Dummy travel website built majorly using HTML,CSS,SaSS. Applied advanced concepts such as variables, mixins, responsive design principles, media queries etc.",
+          skill1: "HTML",
+          skill1Img: HTML,
+          skill2: "CSS",
+          skill2Img: CSS,
+          skill3: "SaSS",
+          skill3Img: SaSS,
         }}
       />
     </div>

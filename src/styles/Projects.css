@@ -42,10 +42,35 @@
   text-wrap: wrap;
   line-height: 1.4rem;
 }
-.tech-skills h5 {
+.project-card h5 {
   color: rgb(252, 158, 108);
 }
-
+.tech-used {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.tech-icons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 2rem;
+}
+.tech-skill > .skillName {
+  font-size: 0.9rem;
+}
+.tech-skill > .skillIcon img {
+  height: 1.7rem;
+  width: 1.7rem;
+}
+/* 
+.skill {
+  display: flex;
+  flex-direction: column;
+}
+.skill > .skillIcon > img {
+  height: 1.5rem;
+  width: 1.5rem;
+} */
 @media only screen and (max-width: 599px) {
   .project-list {
     margin-top: 4rem;
