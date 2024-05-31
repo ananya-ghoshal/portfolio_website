@@ -1,8 +1,8 @@
 import React from "react";
 import "../styles/Projects.css";
 import Project from "./Project";
-import project1 from "../../dist/assets/myblog.png";
-import project2 from "../../dist/assets/gosolo.png";
+import project1 from "../images/myblog.png";
+import project2 from "../images/gosolo.png";
 
 function ProjectList() {
   return (

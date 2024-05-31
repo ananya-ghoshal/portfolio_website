@@ -2,7 +2,7 @@ import React from "react";
 import "../../src/styles/NavBar.css";
 import { Link } from "react-scroll";
 import "../components/AboutMe";
-import Resume from "../components/Resume.pdf";
+import Resume from "../images/Resume.pdf";
 
 function NavBar() {
   return (

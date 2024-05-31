@@ -3,7 +3,7 @@ import "../styles/HomePage.css";
 import "../components/AboutMe";
 import { Link } from "react-scroll";
 import Typewriter from "../components/Typewriter";
-import ProfileImage from "../components/profilepicture.webp";
+import ProfileImage from "../images/profilepicture.webp";
 
 function HomePage() {
   return (
