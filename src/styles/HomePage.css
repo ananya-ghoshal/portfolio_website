@@ -111,7 +111,21 @@
   color: antiquewhite;
   box-shadow: 5px 5px 5px #bda5b0;
 }
-
+/* SCROLL BAR Styling  */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 2.5rem;
+  right: 3rem;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #613449;
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 100%;
+  font-size: 1rem;
+}
 /* styling for phone screen  */
 @media only screen and (max-width: 600px) {
   .homepage {
