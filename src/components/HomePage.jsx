@@ -17,18 +17,6 @@ function HomePage() {
         <br />
       </div>
       <div className="homepage__right">
-        <div className="idea" id="idea1">
-          {" "}
-        </div>
-        <div className="idea" id="idea2">
-          {" "}
-        </div>
-        <div className="idea" id="idea3">
-          {" "}
-        </div>
-        <div className="idea" id="idea4">
-          {" "}
-        </div>
         <div className="aboutMe__img">
           <img src={ProfileImage} alt=""></img>
         </div>
