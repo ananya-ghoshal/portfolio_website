@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: center;
   gap: 3rem;
-  margin-top: 10rem;
+  margin-top: 5rem;
 }
 .project-list .title {
   color: rgb(252, 158, 108);
@@ -20,7 +20,7 @@
   width: 60%;
   margin: auto;
   padding: 2rem;
-  background-image: linear-gradient(90deg, #fff8fc, white);
+  background-image: radial-gradient(closest-side, #fce1f0, white);
   outline: rgb(238, 211, 238) 2px;
   border-radius: 10px;
   box-shadow: 2px 2px 5px 2px rgb(237, 216, 237);

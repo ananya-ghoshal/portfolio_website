@@ -6,7 +6,8 @@
   height: 5rem;
   position: sticky;
   top: 0;
-  background-color: #f8e7f0;
+  background-color: white;
+  z-index: 99;
 }
 .navbar__links > button {
   background: none;

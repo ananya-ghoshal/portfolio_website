@@ -57,7 +57,7 @@
   grid-template-columns: 2fr 2fr;
   gap: 0.1rem;
   height: 88.5vh;
-  background-image: linear-gradient(to bottom, #f8e7f0, white);
+  background-image: radial-gradient(closest-side, #f7ddeb, white);
 }
 .homepage__left {
   grid-column: 1/2;
