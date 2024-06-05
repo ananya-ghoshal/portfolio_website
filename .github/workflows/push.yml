@@ -17,11 +17,11 @@ jobs:
           path: node_modules
           key: deps
       - run: npm install
-      - run: npm i -g @cloudflare/wrangler
+      - run: npm i @cloudflare/wrangler
       - run: npm run build
         env:
           PRODUCTION: 1
-      - run: wrangler pages deploy --project-name ananya-portfolio --branch main --commit-hash "$GITHUB_SHA" --commit-message "$(git show -s --format=%s)" dist
+      - run: npx wrangler pages deploy --project-name ananya-portfolio --branch main --commit-hash "$GITHUB_SHA" --commit-message "$(git show -s --format=%s)" dist
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
