@@ -155,7 +155,7 @@ function AboutMe() {
 
         {/* Languages Tab  */}
 
-        <div id="Languages" class="tabcontent">
+        <div id="Languages" className="tabcontent">
           <div className="skill">
             <div className="skillName">HTML5</div>
             <div className="skillIcon">
@@ -216,7 +216,7 @@ function AboutMe() {
         </div>
 
         {/* Tools tab  */}
-        <div id="Tools" class="tabcontent">
+        <div id="Tools" className="tabcontent">
           <div className="skill">
             <div className="skillName">Vite</div>
             <div className="skillIcon">
