@@ -35,17 +35,6 @@ function AboutMe() {
   }
   return (
     <section className="aboutMe" id="about">
-      <div className="aboutMe__text">
-        <h3>Hello!</h3>
-        <br />
-        <p>
-          I'm a Computer Science Engineer with 3 years of industry experience.
-          <br />
-          I've designed,developed, and maintained captivating user interfaces
-          along the way & am passionate about expanding my learning horizons as
-          I go!
-        </p>
-      </div>
       <div className="skills_card">
         <div className="skills_header">
           <p>My Tech Skills</p>

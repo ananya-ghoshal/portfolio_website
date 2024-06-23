@@ -1,43 +1,34 @@
+* {
+  --primary_color_bright: #a17dff;
+  --primary_color: #f8f1ec;
+  --primary_color_light: #c4b2f6;
+}
 .navbar {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 4rem;
-  height: 5rem;
+  height: 4rem;
   position: sticky;
   top: 0;
-  background-color: white;
   z-index: 99;
+  background-color: var(--primary_color);
 }
 .navbar__links > button {
   background: none;
-  color: black;
+  color: #a28e7e;
   border: none;
   font-size: 1rem;
   cursor: pointer;
   margin-left: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .navbar__links > button:hover {
-  color: rgb(236, 153, 0);
-  transform: scale(1.2);
-  transition: transform 0.2s linear;
-}
-.navbar__links > a > button {
-  background: none;
-  border: none;
-  font-size: 1rem;
-  cursor: pointer;
-  margin-left: 1rem;
-}
-.navbar__links > a:link {
   color: black;
-}
-.navbar__links > a > button:hover {
-  color: rgb(236, 153, 0);
   transform: scale(1.2);
   transition: transform 0.2s linear;
 }
-
 /* styling for phone screen  */
 @media only screen and (max-width: 600px) {
   .navbar {

@@ -3,8 +3,10 @@ import "../styles/HomePage.css";
 import "../components/AboutMe";
 import { Link } from "react-scroll";
 import Typewriter from "../components/Typewriter";
-import ProfileImage from "../images/profilepicture.webp";
+import ProfileImage from "../images/portfolio.cutout.png";
 import Up from "../images/up.png";
+import Resume from "../images/Resume.pdf";
+import ResumeIcon from "../icons/resume.svg";
 
 function HomePage() {
   let myButton = document.getElementById("myBtn");
@@ -32,19 +34,33 @@ function HomePage() {
       <section className="homepage" id="homepage">
         <div className="homepage__left">
           <span className="homepage__header__name">I'm Ananya</span>
-          <br />
           <span className="homepage__header__details">
             <Typewriter text="a frontend developer !" delay={200} />
+            <br />
+            <span className="details">
+              I turn designs into reality by building responsive websites that
+              are visually pleasing and provide a rich browsing experience.
+              Front-end development is a field of constant innovation, with new
+              technologies emerging all the time. This continuous evolution
+              fuels my passion for learning and keeps me motivated.
+            </span>
           </span>
-          <br />
+          <div className="homepageButtons">
+            <Link to="aboutMe" smooth={true}>
+              <button className="button__about">Know more about me</button>
+            </Link>
+            <a href={Resume} target="_blank">
+              <button className="CV">
+                <img src={ResumeIcon} />
+                Resume
+              </button>
+            </a>
+          </div>
         </div>
         <div className="homepage__right">
           <div className="aboutMe__img">
             <img src={ProfileImage} alt=""></img>
           </div>
-          <Link to="aboutMe" smooth={true}>
-            <button className="button__about">Know more about me</button>
-          </Link>
         </div>
       </section>
 
