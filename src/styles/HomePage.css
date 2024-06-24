@@ -95,7 +95,7 @@
 .button__about {
   height: 3rem;
   width: 10rem;
-  background: var(--primary_color_light);
+  background: var(--primary_color_bright);
   border-radius: 20px;
   border-style: none;
   color: white;
