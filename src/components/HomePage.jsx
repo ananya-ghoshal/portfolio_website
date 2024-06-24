@@ -10,26 +10,6 @@ import Resume from "../images/Resume.pdf";
 import ResumeIcon from "../icons/resume.svg";
 
 function HomePage() {
-  let myButton = document.getElementById("myBtn");
-  window.onscroll = function () {
-    scrollfunction();
-  };
-  // When the user scrolls down 20px from the top of the document, show the button
-  function scrollfunction() {
-    if (
-      document.body.scrollTop > 20 ||
-      document.documentElement.scrollTop > 20
-    ) {
-      myButton.style.display = "block";
-    } else {
-      myButton.style.display = "none";
-    }
-  }
-  // When the user clicks on the button, scroll to the top of the document
-  function topFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-  }
   return (
     <>
       <section className="homepage" id="homepage">
@@ -58,7 +38,7 @@ function HomePage() {
               }}
             >
               <p>
-                I am a Computer Science Engineer with three years of industry
+                I am a Computer Science Engineer with 3 years of industry
                 experience in frontend development. Throughout my career, I have
                 collaborated with various clients and worked on diverse
                 projects. I have built desktop applications from scratch and
@@ -74,12 +54,7 @@ function HomePage() {
           </div>
         </div>
       </section>
-
       {/* SCROLL BUTTON  */}
-
-      <button type="button" id="myBtn" onClick={topFunction}>
-        <img src={Up} style={{ height: "2rem", width: "2rem" }} />
-      </button>
     </>
   );
 }

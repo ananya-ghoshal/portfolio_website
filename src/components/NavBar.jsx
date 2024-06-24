@@ -20,7 +20,7 @@ function NavBar() {
 
       <Link to="project-list" smooth={true}>
         <div className="navbar__links">
-          <button>Projects</button>
+          <button>Work</button>
         </div>
       </Link>
 

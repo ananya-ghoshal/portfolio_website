@@ -151,22 +151,6 @@
   animation: float 3s ease-in-out;
   object-fit: contain;
 }
-
-/* SCROLL BAR Styling  */
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 2.5rem;
-  right: 3rem;
-  z-index: 99;
-  border: none;
-  outline: none;
-  background-color: var(--primary_color);
-  cursor: pointer;
-  padding: 1rem;
-  border-radius: 100%;
-  font-size: 1rem;
-}
 /* styling for phone screen  */
 @media only screen and (max-width: 600px) {
   .homepage {

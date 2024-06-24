@@ -11,7 +11,7 @@ import SaSS from "../icons/sass.svg";
 function ProjectList() {
   return (
     <div className="project-list">
-      <p className="title">My Projects</p>
+      <p className="title">Personal Projects</p>
       <div>
         <Project
           props={{
