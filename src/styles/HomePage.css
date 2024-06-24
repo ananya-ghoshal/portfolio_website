@@ -149,6 +149,7 @@
   width: 25rem;
   transform: translatey(0px);
   animation: float 3s ease-in-out;
+  object-fit: contain;
 }
 
 /* SCROLL BAR Styling  */

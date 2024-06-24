@@ -35,9 +35,32 @@ function AboutMe() {
   }
   return (
     <section className="aboutMe" id="about">
+      <div className="aboutMeText">
+        <h3>About Me</h3>
+        <hr style={{ width: "6rem" }} />
+        <p>
+          I turn designs into reality by building responsive websites that are
+          visually pleasing and provide a rich browsing experience. Front-end
+          development is a field of constant innovation, with new technologies
+          emerging all the time. This continuous evolution fuels my passion for
+          learning and keeps me motivated.
+        </p>
+        <p>
+          I love diving deep into how the web works, and have honed my skills in
+          building products from scratch and crafting sleek web UIs. My toolkit
+          includes React, Redux,core JavaScript, HTML and CSS.
+        </p>
+        <p>
+          When I'm not building websites, you'll find me immersed in
+          music—whether I'm creating my own tunes, singing the latest hits, or
+          seeking ways to rekindle my love for nature.
+        </p>
+      </div>
+
       <div className="skills_card">
         <div className="skills_header">
-          <p>My Tech Skills</p>
+          <h3 style={{ textAlign: "center" }}>My Tech Skills</h3>
+          <hr style={{ width: "8rem" }} />
         </div>
 
         {/* Tab links */}

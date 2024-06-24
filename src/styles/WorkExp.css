@@ -1,0 +1,36 @@
+.workExp > h3 {
+  text-align: center;
+  margin-top: 2rem;
+}
+.experience_section {
+  display: flex;
+}
+hr {
+  margin: 0.5rem auto;
+  color: #feb12f;
+}
+.vl {
+  width: 0.4rem;
+  margin-left: 10rem;
+  background-color: #feb12f;
+}
+.experience {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 2rem auto;
+}
+.experience > p {
+  font-size: 0.9rem;
+  color: #feb12f;
+  opacity: 0.8;
+}
+.experience > ul {
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+.experience > ul > li {
+  margin: 0.5rem;
+}

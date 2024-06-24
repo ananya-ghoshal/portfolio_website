@@ -12,23 +12,40 @@
     opacity: 1;
   }
 }
-
+hr {
+  margin: 0.5rem auto;
+  color: #feb12f;
+}
 .aboutMe {
   font-family: "Josefin Sans", sans-serif;
   line-height: 2rem;
   margin-top: 3rem;
 }
+.aboutMeText {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  width: 80%;
+  margin: auto;
+}
+.aboutMeText h3 {
+  text-align: center;
+}
+.aboutMeText h3:hover {
+  transform: rotate(5deg) scale(1.3);
+  transition: transform 0.2s linear;
+}
 .skills_card {
   padding: 2.5rem 2.18rem;
+}
+.skills_card h3:hover {
+  transform: rotate(5deg) scale(1.3);
+  transition: transform 0.2s linear;
 }
 .skills_header > p {
   font-size: 1.75rem;
   text-align: center;
   font-weight: bold;
-}
-.skills_header > p:hover {
-  transform: rotate(5deg) scale(1.3);
-  transition: transform 0.2s linear;
 }
 
 /* Style the tab */
@@ -111,6 +128,7 @@
   .skill > .skillIcon > img {
     height: 1.5rem;
     width: 1.5rem;
+    object-fit: contain;
   }
   .skillName {
     font-size: 0.8rem;
