@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/HomePage.css";
 import "../components/AboutMe";
 import { Link } from "react-scroll";
+import Blob from "../components/Blob";
 import Typewriter from "../components/Typewriter";
 import ProfileImage from "../images/portfolio.cutout.png";
 import Up from "../images/up.png";
@@ -86,6 +87,7 @@ function HomePage() {
         </div>
         <div className="homepage__right">
           <div className="aboutMe__img">
+            <Blob />
             <img src={ProfileImage} alt=""></img>
           </div>
         </div>

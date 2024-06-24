@@ -131,6 +131,18 @@
   gap: 2rem;
   flex-grow: 0;
   animation: moveInRight 2s ease-in-out;
+  position: relative;
+}
+.homepage__right #blob {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  max-width: 40rem;
+  max-height: 40rem;
+  aspect-ratio: 1 / 1;
 }
 .homepage__right > .aboutMe__img > img {
   height: 25rem;
