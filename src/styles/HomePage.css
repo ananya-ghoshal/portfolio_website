@@ -73,6 +73,7 @@
 }
 .homepage__header__name {
   font-size: 5rem;
+  font-family: "Dancing Script", cursive;
   font-weight: bolder;
 }
 .homepage__header__details {
