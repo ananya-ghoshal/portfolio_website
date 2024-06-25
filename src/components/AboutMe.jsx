@@ -35,20 +35,32 @@ function AboutMe() {
   }
   return (
     <section className="aboutMe" id="about">
-      <div className="aboutMe__text">
-        <h3>Hello!</h3>
-        <br />
+      <div className="aboutMeText">
+        <h3>About Me</h3>
+        <hr style={{ width: "6rem" }} />
         <p>
-          I'm a Computer Science Engineer with 3 years of industry experience.
-          <br />
-          I've designed,developed, and maintained captivating user interfaces
-          along the way & am passionate about expanding my learning horizons as
-          I go!
+          I turn designs into reality by building responsive websites that are
+          visually pleasing and provide a rich browsing experience. Front-end
+          development is a field of constant innovation, with new technologies
+          emerging all the time. This continuous evolution fuels my passion for
+          learning and keeps me motivated.
+        </p>
+        <p>
+          I love diving deep into how the web works, and have honed my skills in
+          building products from scratch and crafting sleek web UIs. My toolkit
+          includes React, Redux,core JavaScript, HTML and CSS.
+        </p>
+        <p>
+          When I'm not building websites, you'll find me immersed in
+          music—whether I'm creating my own tunes, singing the latest hits, or
+          seeking ways to rekindle my love for nature.
         </p>
       </div>
+
       <div className="skills_card">
         <div className="skills_header">
-          <p>My Tech Skills</p>
+          <h3 style={{ textAlign: "center" }}>My Tech Skills</h3>
+          <hr style={{ width: "8rem" }} />
         </div>
 
         {/* Tab links */}
@@ -166,7 +178,7 @@ function AboutMe() {
 
         {/* Languages Tab  */}
 
-        <div id="Languages" class="tabcontent">
+        <div id="Languages" className="tabcontent">
           <div className="skill">
             <div className="skillName">HTML5</div>
             <div className="skillIcon">
@@ -227,7 +239,7 @@ function AboutMe() {
         </div>
 
         {/* Tools tab  */}
-        <div id="Tools" class="tabcontent">
+        <div id="Tools" className="tabcontent">
           <div className="skill">
             <div className="skillName">Vite</div>
             <div className="skillIcon">

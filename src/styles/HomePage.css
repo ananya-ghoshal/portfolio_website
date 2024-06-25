@@ -1,14 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+NZ:wght@100..400&display=swap");
+* {
+  --primary_color_bright: #a17dff;
+  --primary_color: #f8f1ec;
+  --primary_color_light: #c4b2f6;
+}
 @keyframes float {
   0% {
-    box-shadow: 0 5px 15px 0px #ebcfdd;
     transform: translatey(0px);
   }
   50% {
-    box-shadow: 0 25px 15px 0px #fbb9d9;
     transform: translatey(-20px);
   }
   100% {
-    box-shadow: 0 5px 15px 0px #ebcfdd;
     transform: translatey(0px);
   }
 }
@@ -55,27 +58,70 @@
 .homepage {
   display: grid;
   grid-template-columns: 2fr 2fr;
-  gap: 0.1rem;
   height: 88.5vh;
-  background-image: radial-gradient(closest-side, #f7ddeb, white);
+  background-color: var(--primary_color);
+  font-size: 2rem;
 }
 .homepage__left {
   grid-column: 1/2;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   gap: 2rem;
-  margin-left: 2rem;
+  margin-left: 5rem;
   animation: moveInLeft 2s ease-in-out;
 }
 .homepage__header__name {
-  font-size: 8rem;
+  font-size: 5rem;
   font-family: "Dancing Script", cursive;
-  text-shadow: 2px 2px 5px #edd8e2;
+  font-weight: bolder;
 }
 .homepage__header__details {
   font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.details {
+  font-size: 1rem;
+  color: #a28e7e;
+}
+.homepageButtons {
+  display: flex;
+  gap: 2rem;
+}
+.homepageButtons > a {
+  text-decoration: none;
+}
+.button__about {
+  height: 3rem;
+  width: 10rem;
+  background: var(--primary_color_bright);
+  border-radius: 20px;
+  border-style: none;
+  color: white;
+}
+.button__about:hover {
+  transform: scale(1.1);
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+.CV {
+  height: 3rem;
+  width: 10rem;
+  background: #feb12f;
+  border-radius: 20px;
+  border-style: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0.5rem;
+}
+.CV:hover {
+  transform: scale(1.1);
+  transition: all 0.2s linear;
+  cursor: pointer;
 }
 .homepage__right {
   grid-column: 2/3;
@@ -86,45 +132,25 @@
   gap: 2rem;
   flex-grow: 0;
   animation: moveInRight 2s ease-in-out;
+  position: relative;
+}
+.homepage__right #blob {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  max-width: 40rem;
+  max-height: 40rem;
+  aspect-ratio: 1 / 1;
 }
 .homepage__right > .aboutMe__img > img {
-  border-radius: 50%;
-  height: 15rem;
-  width: 15rem;
-  box-shadow: 0 5px 15px 0px #b79ca9;
+  height: 25rem;
+  width: 25rem;
   transform: translatey(0px);
   animation: float 3s ease-in-out;
-}
-.button__about {
-  height: 3rem;
-  width: 15rem;
-  background-color: #613449;
-  color: white;
-  border-radius: 20px;
-  border-style: none;
-  font-size: 1rem;
-}
-.button__about:hover {
-  transform: scale(1.2);
-  transition: all 0.2s linear;
-  cursor: pointer;
-  color: antiquewhite;
-  box-shadow: 5px 5px 5px #bda5b0;
-}
-/* SCROLL BAR Styling  */
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 2.5rem;
-  right: 3rem;
-  z-index: 99;
-  border: none;
-  outline: none;
-  background-color: #613449;
-  cursor: pointer;
-  padding: 1rem;
-  border-radius: 100%;
-  font-size: 1rem;
+  object-fit: contain;
 }
 /* styling for phone screen  */
 @media only screen and (max-width: 600px) {
