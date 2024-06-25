@@ -9,16 +9,15 @@ hr {
   margin: 0.5rem auto;
   color: #feb12f;
 }
-.vl {
-  width: 0.4rem;
-  margin-left: 10rem;
-  background-color: #feb12f;
-}
 .experience {
   display: flex;
   flex-direction: column;
   width: 50%;
   margin: 2rem auto;
+  padding-left: 2rem;
+  border-left: 2px solid #feb12f;
+}
+.experience::before {
 }
 .experience > p {
   font-size: 0.9rem;

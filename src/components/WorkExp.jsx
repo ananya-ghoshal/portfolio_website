@@ -7,7 +7,6 @@ function WorkExp() {
       <h3>Work Experience</h3>
       <hr style={{ width: "10rem" }} />
       <div className="experience_section">
-        {/* <div className="vl"></div> */}
         <div className="experiences">
           <div className="experience">
             <h5>System Engineer</h5>
