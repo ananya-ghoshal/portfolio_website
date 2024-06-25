@@ -4,7 +4,7 @@ import "../components/AboutMe";
 import { Link } from "react-scroll";
 import Blob from "../components/Blob";
 import Typewriter from "../components/Typewriter";
-import ProfileImage from "../images/portfolio.cutout.png";
+import ProfileImage from "../images/portfolio.cutout.webp";
 import Resume from "../images/AnanyaGhoshal_resume.pdf";
 import ResumeIcon from "../icons/resume.svg";
 
