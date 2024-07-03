@@ -19,7 +19,7 @@
   left: 0;
   top: 2rem;
   bottom: 0;
-  background-color: #feb12f;
+  background-color: #fadcc3;
   position: absolute;
 }
 hr {
@@ -47,8 +47,10 @@ hr {
 }
 .date {
   font-size: 0.8rem;
-  color: #feb12f;
+  color: #a28e7e;
   opacity: 0.8;
+  padding-top: 0.5rem;
+  padding-left: 0.25rem;
 }
 .experience > ul {
   font-size: 0.8rem;
