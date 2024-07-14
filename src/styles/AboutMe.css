@@ -147,3 +147,43 @@ hr {
     font-size: 0.8rem;
   }
 }
+/* styling for large devices  */
+@media only screen and (min-width: 1200px) {
+  .aboutMe {
+    line-height: 3rem;
+    margin-top: 5rem;
+  }
+  .aboutMeText {
+    padding: 2rem;
+    font-size: 1.5rem;
+  }
+  .aboutMeText p {
+    margin-top: 1.5rem;
+  }
+  .skills_header > p {
+    font-size: 2.75rem;
+  }
+
+  /* Style the tab */
+  .tab {
+    width: 34rem;
+    margin: 4rem auto;
+  }
+
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    width: 8.5rem;
+    padding: 1.2rem 1.5rem;
+  }
+  /* Style the tab content */
+  .tabcontent {
+    gap: 4rem;
+  }
+  .skill {
+    gap: 1.5rem;
+  }
+  .skill > .skillIcon > img {
+    height: 4rem;
+    width: 4rem;
+  }
+}

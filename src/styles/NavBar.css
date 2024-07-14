@@ -44,3 +44,14 @@
     margin-left: 0.5rem;
   }
 }
+/* styling for large devices  */
+@media only screen and (min-width: 1200px) {
+  .navbar {
+    gap: 6rem;
+    height: 6rem;
+  }
+  .navbar__links > button {
+    font-size: 2rem;
+    padding-top: 4rem;
+  }
+}

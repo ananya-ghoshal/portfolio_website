@@ -178,3 +178,45 @@
     width: 10rem;
   }
 }
+/* styling for larger screens  */
+@media only screen and (min-width: 1200px) {
+  .homepage {
+    font-size: 10rem;
+  }
+  .homepage__left {
+    gap: 5rem;
+  }
+  .homepage__header__name {
+    font-size: 10rem;
+  }
+  .homepage__header__details {
+    font-size: 2.5rem;
+    gap: 2rem;
+  }
+  .details {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-top: 2.5rem;
+  }
+  .homepageButtons {
+    gap: 4rem;
+  }
+  .button__about {
+    height: 5rem;
+    width: 15rem;
+    font-size: 1.5rem;
+  }
+  .CV {
+    height: 5rem;
+    width: 15rem;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+  }
+  .homepage__right {
+    gap: 4rem;
+  }
+  .homepage__right > .aboutMe__img > img {
+    height: 35rem;
+    width: 35rem;
+  }
+}
