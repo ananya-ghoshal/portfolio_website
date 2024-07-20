@@ -179,7 +179,7 @@
   }
 }
 /* styling for larger screens  */
-@media only screen and (min-width: 1200px) {
+/* @media only screen and (min-width: 1400px) {
   .homepage {
     font-size: 10rem;
   }
@@ -219,4 +219,4 @@
     height: 35rem;
     width: 35rem;
   }
-}
+} */

@@ -148,7 +148,7 @@ hr {
   }
 }
 /* styling for large devices  */
-@media only screen and (min-width: 1200px) {
+/* @media only screen and (min-width: 1400px) {
   .aboutMe {
     line-height: 3rem;
     margin-top: 5rem;
@@ -165,18 +165,18 @@ hr {
   }
 
   /* Style the tab */
-  .tab {
+/* .tab {
     width: 34rem;
     margin: 4rem auto;
-  }
+  } */
 
-  /* Style the buttons that are used to open the tab content */
-  .tab button {
+/* Style the buttons that are used to open the tab content */
+/* .tab button {
     width: 8.5rem;
     padding: 1.2rem 1.5rem;
-  }
-  /* Style the tab content */
-  .tabcontent {
+  } */
+/* Style the tab content */
+/* .tabcontent {
     gap: 4rem;
   }
   .skill {
@@ -186,4 +186,4 @@ hr {
     height: 4rem;
     width: 4rem;
   }
-}
+} */
