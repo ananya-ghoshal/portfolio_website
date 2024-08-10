@@ -3,10 +3,12 @@ import "../styles/Projects.css";
 import Project from "./Project";
 import project1 from "../images/myblog.png";
 import project2 from "../images/gosolo.png";
+import project3 from "../images/WeatherApp.png";
 import HTML from "../icons/html.svg";
 import CSS from "../icons/css.svg";
 import JS from "../icons/js.svg";
 import SaSS from "../icons/sass.svg";
+import ReactJS from "../icons/react.svg";
 
 function ProjectList() {
   return (
@@ -39,6 +41,20 @@ function ProjectList() {
             skill2Img: CSS,
             skill3: "SaSS",
             skill3Img: SaSS,
+          }}
+        />
+        <Project
+          props={{
+            img: project3,
+            title: "Weather App",
+            link: "https://weather-app-anw.pages.dev/",
+            text: "Weather application built majorly using React JS.",
+            skill1: "HTML",
+            skill1Img: HTML,
+            skill2: "CSS",
+            skill2Img: CSS,
+            skill3: "React JS",
+            skill3Img: ReactJS,
           }}
         />
       </div>
