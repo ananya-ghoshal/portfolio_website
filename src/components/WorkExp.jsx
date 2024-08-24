@@ -8,9 +8,25 @@ function WorkExp() {
       <hr style={{ width: "10rem" }} />
       <div className="experience_section">
         <div className="experience">
+          <h5>Conversational AI Engineer</h5>
+          <p style={{ fontSize: "0.9rem" }}>Avaamo Technologies Pvt. Ltd.</p>
+          <p className="date">JUL'24 - Present</p>
+          <ul>
+            <li>
+              JavaScript Developer working on a generative AI platform to build
+              chat bots & integrate them with chat/social software like Facebook
+              Messenger, Twitter, SMS and IVR systems.
+            </li>
+            <li>
+              Configured and deployed products utilizing Generative AI and Large
+              Language Models (LLMs) for enhanced chatbot functionality.
+            </li>
+          </ul>
+        </div>
+        <div className="experience">
           <h5>System Engineer</h5>
           <p style={{ fontSize: "0.9rem" }}>Tata Consultancy Services</p>
-          <p className="date">OCT ’22-MAR ‘24</p>
+          <p className="date">OCT ’22 - MAR ‘24</p>
           <ul>
             <li>
               Built and maintained the user interface (UI) components of the
@@ -42,7 +58,7 @@ function WorkExp() {
         <div className="experience">
           <h5>Assistant System Engineer</h5>
           <p style={{ fontSize: "0.9rem" }}>Tata Consultancy Services</p>
-          <p className="date">APR ’21-OCT ‘22</p>
+          <p className="date">APR ’21 - OCT ‘22</p>
           <ul>
             <li>
               Possess expertise in working with enterprise applications such as
@@ -70,7 +86,7 @@ function WorkExp() {
         <div className="experience">
           <h5>Summer Intern</h5>
           <p style={{ fontSize: "0.9rem" }}>NIT Durgapur</p>
-          <p className="date">JUN ’19-JUL ‘19</p>
+          <p className="date">JUN ’19 - JUL ‘19</p>
           <ul>
             <li>
               Worked on Network Intrusion Detection using SVM Classifier with
