@@ -43,20 +43,6 @@ function ProjectList() {
             skill3Img: SaSS,
           }}
         />
-        <Project
-          props={{
-            img: project3,
-            title: "Weather App",
-            link: "https://weather-app-anw.pages.dev/",
-            text: "Weather application built majorly using React JS.",
-            skill1: "HTML",
-            skill1Img: HTML,
-            skill2: "CSS",
-            skill2Img: CSS,
-            skill3: "React JS",
-            skill3Img: ReactJS,
-          }}
-        />
       </div>
     </div>
   );
