@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 import Blob from "../components/Blob";
 import Typewriter from "../components/Typewriter";
 import ProfileImage from "../images/portfolio.cutout.webp";
-import Resume from "../images/Ananya_Ghoshal.pdf";
+import Resume from "../images/AnanyaGhoshal.pdf";
 import ResumeIcon from "../icons/resume.svg";
 
 function HomePage() {
