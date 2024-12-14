@@ -55,7 +55,6 @@ function getDeltas(n_points, magnitude) {
       (Math.random() * 2 - 1) * magnitude,
     ]);
   }
-  console.log(deltas);
   return deltas;
 }
 
