@@ -3,12 +3,13 @@ import "../styles/Projects.css";
 import Project from "./Project";
 import project1 from "../images/myblog.png";
 import project2 from "../images/gosolo.png";
-import project3 from "../images/WeatherApp.png";
+import project3 from "../images/cake_shop.png";
 import HTML from "../icons/html.svg";
 import CSS from "../icons/css.svg";
 import JS from "../icons/js.svg";
 import SaSS from "../icons/sass.svg";
 import ReactJS from "../icons/react.svg";
+import Redux from "../icons/redux.svg";
 
 function ProjectList() {
   return (
@@ -41,6 +42,20 @@ function ProjectList() {
             skill2Img: CSS,
             skill3: "SaSS",
             skill3Img: SaSS,
+          }}
+        />
+        <Project
+          props={{
+            img: project3,
+            title: "Cake shop",
+            link: "https://cake-shop.pages.dev/",
+            text: "Dummy travel website built majorly using HTML,CSS,SaSS. Applied advanced concepts such as variables, mixins, responsive design principles, media queries etc.",
+            skill1: "React JS",
+            skill1Img: ReactJS,
+            skill2: "Redux",
+            skill2Img: Redux,
+            skill3: "CSS",
+            skill3Img: CSS,
           }}
         />
       </div>
