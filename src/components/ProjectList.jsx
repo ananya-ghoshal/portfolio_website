@@ -49,7 +49,7 @@ function ProjectList() {
             img: project3,
             title: "Cake shop",
             link: "https://cake-shop.pages.dev/",
-            text: "Dummy travel website built majorly using HTML,CSS,SaSS. Applied advanced concepts such as variables, mixins, responsive design principles, media queries etc.",
+            text: "A visually appealing and user-friendly cake shop website built using React.js for a dynamic frontend experience and Redux for robust state management.",
             skill1: "React JS",
             skill1Img: ReactJS,
             skill2: "Redux",
