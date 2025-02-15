@@ -1,15 +1,35 @@
 import React from "react";
 import "../styles/Projects.css";
+import RedirectIcon from "../icons/redirectWhite.png";
 
 function Project({ props }) {
   return (
     <div className="project-card">
-      <img src={props.img} />
+      <a href={props.link} target="_blank">
+        <img src={props.img} />
+      </a>
       <div className="project-details">
-        <h3>{props.title}</h3>
-        <a href={props.link} target="_blank">
-          {props.link}
-        </a>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <h3>{props.title}</h3>
+          <a href={props.link} target="_blank">
+            <img
+              src={RedirectIcon}
+              style={{
+                height: "1.8rem",
+                width: "1.8rem",
+                paddingLeft: "1rem",
+                paddingTop: "0.25rem",
+              }}
+            />
+            {/* {props.link} */}
+          </a>
+        </div>
         <p>{props.text}</p>
         <div className="tech-used">
           <h5>Technology Used</h5>

@@ -11,6 +11,7 @@ import Bootstrap from "../icons/bootstrap.svg";
 import Vite from "../icons/vite.svg";
 import Jest from "../icons/jest.svg";
 import GIT from "../icons/git.svg";
+import Webpack from "../icons/webpack.png";
 
 function AboutMe() {
   function openCity(evt, skillTab) {
@@ -172,6 +173,12 @@ function AboutMe() {
             <div className="skillName">GIT</div>
             <div className="skillIcon">
               <img src={GIT} alt="" />
+            </div>
+          </div>
+          <div className="skill">
+            <div className="skillName">Webpack</div>
+            <div className="skillIcon">
+              <img src={Webpack} alt="" />
             </div>
           </div>
         </div>

@@ -8,23 +8,34 @@ function WorkExp() {
       <hr style={{ width: "10rem" }} />
       <div className="experience_section">
         <div className="experience">
-          <h5>Conversational AI Engineer</h5>
+          <h5>Senior Frontend Developer</h5>
           <p style={{ fontSize: "0.9rem" }}>Avaamo Technologies Pvt. Ltd.</p>
           <p className="date">JUL'24 - Present</p>
           <ul>
             <li>
-              JavaScript Developer working on a generative AI platform to build
-              chat bots & integrate them with chat/social software like Facebook
-              Messenger, Twitter, SMS and IVR systems.
+              Frontend Developer with expertise in React.js and JavaScript (ES6)
+              , building intuitive interfaces and integrating chatbots for
+              Generative AI platforms.
             </li>
             <li>
-              Configured and deployed products utilizing Generative AI and Large
-              Language Models (LLMs) for enhanced chatbot functionality.
+              Designed and deployed Generative AI-driven UIs using React.js and
+              CSS to ensure dynamic, responsive and user-friendly experiences.
+            </li>
+            <li>
+              Developed and integrated RESTful APIs with React.js & Next.js.
+              Processed and visualized large JSON datasets to enhance chatbot
+              functionality.
+            </li>
+            <li>
+              Experienced with browser testing, debugging, and frontend build
+              tools like Webpack and Babel.Proficient in Git, with hands-on
+              experience using Jest for frontend testing.Familiar with Docker
+              and Kubernetes.
             </li>
           </ul>
         </div>
         <div className="experience">
-          <h5>System Engineer</h5>
+          <h5>System Engineer(Digital Cadre)</h5>
           <p style={{ fontSize: "0.9rem" }}>Tata Consultancy Services</p>
           <p className="date">OCT ’22 - MAR ‘24</p>
           <ul>
@@ -34,13 +45,13 @@ function WorkExp() {
             </li>
             <li>
               Implemented responsive design techniques & integrated frontend
-              components with the backend CPQ platform using restFUL API
-              methods.
+              components with the backend CPQ platform using RESTful API methods
+              and asynchronous request handling.
             </li>
             <li>
-              Enhanced user experience by incorporating interactive elements and
-              dynamic content using JavaScript frameworks/libraries such as
-              jQuery, React JS.
+              Enhanced user experience by 20% by incorporating interactive
+              elements and dynamic content using jQuery and React JS.Worked with
+              state management libraries such as Redux.
             </li>
             <li>
               Implemented frontend optimisation techniques that reduced page
@@ -61,11 +72,13 @@ function WorkExp() {
           <p className="date">APR ’21 - OCT ‘22</p>
           <ul>
             <li>
-              Possess expertise in working with enterprise applications such as
-              Oracle CPQ (Configure, Price, Quote) and Oracle HCM Cloud, where I
-              closely interacted with the functionalities of these tools. Worked
-              extensively with Java Script for backend development tasks and BML
-              (BigMachines Language).
+              Worked on the frontend integration and user interface enhancements
+              for enterprise applications such as Oracle CPQ and Oracle HCM
+              Cloud.
+            </li>
+            <li>
+              Skilled in gathering and analyzing business requirements,
+              configuring applications to meet client needs.
             </li>
             <li>
               Proficient in guiding clients through the entire implementation
@@ -78,8 +91,8 @@ function WorkExp() {
               by 12%.
             </li>
             <li>
-              Competent with JIRA,Confluence,Visual Studio Code, MS Office
-              applications.
+              Competent with Google Lighthouse,JIRA,Confluence,Figma,Visual
+              Studio Code, MS Office applications.
             </li>
           </ul>
         </div>
