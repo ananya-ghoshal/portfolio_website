@@ -87,7 +87,7 @@ export function Blob() {
     if (timestamp >= nextTimestampRef.current) {
       startTimestampRef.current = timestamp;
       nextTimestampRef.current = timestamp + 5000;
-      deltasRef.current = getDeltas(n_points, 0.2);
+      deltasRef.current = getDeltas(n_points, 0.5);
     }
     setCurPoints((points) =>
       refreshPoints(
