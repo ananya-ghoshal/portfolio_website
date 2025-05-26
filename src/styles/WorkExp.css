@@ -25,6 +25,7 @@
 hr {
   margin: 0.5rem auto;
   color: #feb12f;
+  height: 0.05rem;
 }
 .experience {
   display: flex;

@@ -15,6 +15,7 @@
 hr {
   margin: 0.5rem auto;
   background: #feb12f;
+  height: 0.05rem;
 }
 .aboutMe {
   font-family: "Josefin Sans", sans-serif;
