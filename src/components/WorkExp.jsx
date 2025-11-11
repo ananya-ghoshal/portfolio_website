@@ -8,106 +8,80 @@ function WorkExp() {
       <hr style={{ width: "10rem" }} />
       <div className="experience_section">
         <div className="experience">
-          <h5>Senior Frontend Developer</h5>
+          <h5>Senior Software Engineer</h5>
+          <p style={{ fontSize: "0.9rem" }}>Zaggle Prepaid Ocean Services</p>
+          <p className="date">Aug 2025 - Present</p>
+          <ul>
+            <li>
+              Built an Expense Management System using React, Redux, & Material
+              UI with responsive design, improving load time by 40% via SSR.
+              Mentored juniors, led code reviews, and maintained Git
+              documentation.
+            </li>
+            <li>
+              Engineered advanced caching, memoization, and component-level
+              optimizations to eliminate redundant re-renders and API calls.
+            </li>
+          </ul>
+        </div>
+        <div className="experience">
+          <h5>Conversational AI Engineer</h5>
           <p style={{ fontSize: "0.9rem" }}>Avaamo Technologies Pvt. Ltd.</p>
-          <p className="date">JUL'24 - Present</p>
+          <p className="date">July 2024 - July 2025</p>
           <ul>
             <li>
-              Frontend Developer with expertise in React.js and JavaScript (ES6)
-              , building intuitive interfaces and integrating chatbots for
-              Generative AI platforms.
+              Designed and developed Agentic AI chatbot and voice assistant UIs,
+              using React, JavaScript (ES6+), & Context API, accelerating
+              deployment by 30% and improving accuracy by 20%.
             </li>
             <li>
-              Designed and deployed Generative AI-driven UIs using React.js and
-              CSS to ensure dynamic, responsive and user-friendly experiences.
+              Implemented secure auth workflows with JWT, session refresh, and
+              TypeScript-based test suites achieving more than 90% coverage.
             </li>
             <li>
-              Developed and integrated RESTful APIs with React.js & Next.js.
-              Processed and visualized large JSON datasets to enhance chatbot
-              functionality.
+              Built schema-driven dynamic forms with Redux & Ant Design,
+              leveraging modern web standards, SCSS, and enhanced browser
+              internals (JS engine performance, reflow, repaint, shadow DOM).
             </li>
             <li>
-              Experienced with browser testing, debugging, and frontend build
-              tools like Webpack and Babel.Proficient in Git, with hands-on
-              experience using Jest for frontend testing.Familiar with Docker
-              and Kubernetes.
+              Worked on Node.js APIs with npm, and optimized SEO and performance
+              through Service Workers, dynamic rendering, and Google Lighthouse
+              audits.
             </li>
           </ul>
         </div>
         <div className="experience">
-          <h5>System Engineer(Digital Cadre)</h5>
+          <h5>System Engineer</h5>
           <p style={{ fontSize: "0.9rem" }}>Tata Consultancy Services</p>
-          <p className="date">OCT ’22 - MAR ‘24</p>
+          <p className="date">April 2021 - March 2024</p>
           <ul>
             <li>
-              Built and maintained the user interface (UI) components of the
-              Oracle CPQ website using HTML, CSS, and JavaScript.
+              Customized Oracle CPQ & HCM Cloud frontends using modern
+              JavaScript (ES6+), modular architecture & REST APIs delivering
+              scalable, high performance UIs for enterprise clients.
             </li>
             <li>
-              Implemented responsive design techniques & integrated frontend
-              components with the backend CPQ platform using RESTful API methods
-              and asynchronous request handling.
+              Improved engagement by 20% and reduced load time by 10% using
+              Webpack optimization, lazy loading, code splitting, & React
+              Router–driven dynamic routing with SASS preprocessing for modular
+              styling.
             </li>
             <li>
-              Enhanced user experience by 20% by incorporating interactive
-              elements and dynamic content using jQuery and React JS.Worked with
-              state management libraries such as Redux.
-            </li>
-            <li>
-              Implemented frontend optimisation techniques that reduced page
-              load time by 10%.
-            </li>
-            <li>
-              Handled events and callbacks to trigger actions within the CPQ
-              platform based on user interactions on the website.
-            </li>
-            <li>
-              Worked with cross-functional teams using Agile methodologies.
-            </li>
-          </ul>
-        </div>
-        <div className="experience">
-          <h5>Assistant System Engineer</h5>
-          <p style={{ fontSize: "0.9rem" }}>Tata Consultancy Services</p>
-          <p className="date">APR ’21 - OCT ‘22</p>
-          <ul>
-            <li>
-              Worked on the frontend integration and user interface enhancements
-              for enterprise applications such as Oracle CPQ and Oracle HCM
-              Cloud.
-            </li>
-            <li>
-              Skilled in gathering and analyzing business requirements,
-              configuring applications to meet client needs.
-            </li>
-            <li>
-              Proficient in guiding clients through the entire implementation
-              lifecycle, from requirement gathering and design to testing,
-              training, and post-implementation support.
-            </li>
-            <li>
-              Introduced Kanban Board style ticketing system to promote highly
-              efficient asynchronous and synchronous work, increasing efficiency
-              by 12%.
-            </li>
-            <li>
-              Competent with Google Lighthouse,JIRA,Confluence,Figma,Visual
-              Studio Code, MS Office applications.
+              Enhanced Agile delivery processes by optimizing JIRA workflows and
+              integrating automation with Git and CI/CD pipelines, driving
+              end-to-end implementation from design to deployment and improving
+              release efficiency
             </li>
           </ul>
         </div>
         <div className="experience">
           <h5>Summer Intern</h5>
           <p style={{ fontSize: "0.9rem" }}>NIT Durgapur</p>
-          <p className="date">JUN ’19 - JUL ‘19</p>
+          <p className="date">June 2019 - July 2019</p>
           <ul>
             <li>
-              Worked on Network Intrusion Detection using SVM Classifier with
-              t-SNE based feature extraction technique.
-            </li>
-            <li>
-              Participated in developing ideas and implementing them to ensure a
-              safe cyber space using IDSs(Intrusion Detection Systems)
+              Developed Network Intrusion Detection model using SVM & t-SNE
+              feature extraction with 93% test accuracy.
             </li>
           </ul>
         </div>

@@ -17,7 +17,7 @@ function ContactMe() {
               <img src={GithubImg} alt="" />
             </a>
             <a
-              href="https://www.linkedin.com/in/ananyaghoshal1/"
+              href="https://www.linkedin.com/in/ananyaghoshal/"
               target="_blank"
             >
               <img src={LinkedinImg} alt="" />

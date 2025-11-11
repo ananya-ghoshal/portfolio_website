@@ -37,11 +37,11 @@ function HomePage() {
               }}
             >
               <p>
-                I am a Computer Science Engineer with 3 years of industry
-                experience in frontend development. Throughout my career, I have
-                collaborated with various clients and worked on diverse
-                projects. I have built desktop applications from scratch and
-                implemented UI changes to meet design requirements.
+                I am a Computer Science Engineer with more than 4 years of
+                industry experience in frontend development. Throughout my
+                career, I have collaborated with various clients and worked on
+                diverse projects. I have built desktop applications from scratch
+                and implemented UI changes to meet design requirements.
               </p>
             </div>
           </span>
