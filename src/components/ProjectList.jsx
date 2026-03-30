@@ -15,7 +15,7 @@ function ProjectList() {
   return (
     <div className="project-list">
       <p className="title">Personal Projects</p>
-      <div>
+      <div className="cards">
         <Project
           props={{
             img: project1,

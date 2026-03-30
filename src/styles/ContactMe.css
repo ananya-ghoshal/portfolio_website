@@ -1,30 +1,47 @@
-* {
-  --primary_color_bright: #a17dff;
-  --primary_color: #f8f1ec;
-  --primary_color_light: #c4b2f6;
-}
 .ContactMe_card {
+  position: relative;
+  overflow: hidden;
   margin-bottom: 0;
-  margin-top: 3rem;
-  height: 10rem;
+  padding: clamp(2rem, 5vw, 5rem);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--primary_color_bright);
+  background-color: var(--secondary_color);
+  cursor: pointer;
+}
+
+.ContactMe_card .spotlight {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0;
+  background: radial-gradient(
+    250px circle at var(--x, 50%) var(--y, 50%),
+    rgba(255, 255, 255, 0.35),
+    rgba(255, 255, 255, 0.15) 40%,
+    transparent 70%
+  );
+  transition: opacity 0.3s ease;
+}
+
+.ContactMe_card:hover .spotlight {
+  opacity: 1;
 }
 
 .ContactMe_card > .text > h3 {
-  font-size: 3rem;
-  font-family: "Dancing Script", cursive;
+  padding-bottom: clamp(1rem, 2vw, 2rem);
+  text-align: center;
+  font-weight: 600;
+  text-shadow: 0 0 10px white;
 }
 .icons {
   display: flex;
   justify-content: center;
 }
 .icons > a > img {
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 1.2rem;
+  width: 1.2rem;
   padding: 0.5rem;
 }
 .icons > a > img:hover {
@@ -32,17 +49,19 @@
   transition: transform 0.5s linear;
   cursor: pointer;
 }
+@media (min-width: 1600px) {
+  .ContactMe_card {
+    font-size: x-large;
+  }
 
-/* styling for mobile devices  */
-@media only screen and (max-width: 600px) {
-  .Contactme_card > .text > h3 {
-    font-size: 1rem;
+  .ContactMe_card > .text > h3 {
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
   }
-  .Contactme_card > .name > p.email {
-    font-size: 0.5rem;
-  }
+
   .icons > a > img {
-    height: 1rem;
-    width: 1rem;
+    height: 2rem;
+    width: 2rem;
+    padding: 1rem;
   }
 }

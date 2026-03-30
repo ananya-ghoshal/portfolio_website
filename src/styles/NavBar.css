@@ -1,57 +1,56 @@
-* {
-  --primary_color_bright: #a17dff;
-  --primary_color: #f8f1ec;
-  --primary_color_light: #c4b2f6;
-}
 .navbar {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 4rem;
-  height: 4rem;
+  gap: clamp(1rem, 3vw, 3rem);
+  padding: clamp(1rem, 2vw, 2rem);
   position: sticky;
-  top: 0;
+  top: 0rem;
   z-index: 99;
-  background-color: var(--primary_color);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 .navbar__links > button {
   background: none;
-  color: #a28e7e;
+  color: var(--color-black);
+  font-style: bold;
   border: none;
-  font-size: 1rem;
   cursor: pointer;
-  margin-left: 1rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  position: relative;
+  transition: all 0.25s ease;
 }
 .navbar__links > button:hover {
-  color: black;
-  transform: scale(1.2);
-  transition: transform 0.2s linear;
+  color: var(--secondary_color_text);
+  transform: translateY(-2px);
 }
-/* styling for phone screen  */
-@media only screen and (max-width: 600px) {
-  .navbar {
-    justify-content: space-evenly;
-    gap: 0;
-  }
-  .navbar__links > button {
-    font-size: 1rem;
-    margin-left: 0.5rem;
-  }
-  .navbar__links > a > button {
-    font-size: 1rem;
-    margin-left: 0.5rem;
-  }
+.navbar__links > button::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: var(--tertiary_color);
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
 }
-/* styling for large devices  */
-/* @media only screen and (min-width: 1400px) {
+
+.navbar__links > button:hover::after {
+  width: 60%;
+}
+
+@media (min-width: 1600px) {
   .navbar {
-    gap: 6rem;
-    height: 6rem;
+    gap: 10rem;
+    padding: 2.5rem;
   }
+
   .navbar__links > button {
     font-size: 2rem;
-    padding-top: 4rem;
   }
-} */
+
+  .navbar__links > button::after {
+    height: 3px;
+  }
+}

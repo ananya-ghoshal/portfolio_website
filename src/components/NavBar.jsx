@@ -12,19 +12,25 @@ function NavBar() {
         </div>
       </Link>
 
-      <Link to="aboutMe" smooth={true}>
-        <div className="navbar__links">
-          <button>About</button>
-        </div>
-      </Link>
-
       <Link to="project-list" smooth={true}>
         <div className="navbar__links">
-          <button>Work</button>
+          <button>Projects</button>
         </div>
       </Link>
 
-      <Link to="contact" smooth={true}>
+      <Link to="aboutMe" smooth={true}>
+        <div className="navbar__links">
+          <button>Skills</button>
+        </div>
+      </Link>
+
+      <Link to="workExp" smooth={true}>
+        <div className="navbar__links">
+          <button>Experience</button>
+        </div>
+      </Link>
+
+      <Link to="ContactMe_card" smooth={true}>
         <div className="navbar__links">
           <button>Contact</button>
         </div>

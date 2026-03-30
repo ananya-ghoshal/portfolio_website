@@ -1,15 +1,31 @@
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+:root {
+  --font-family: "Inter", sans-serif;
+  --font-size-heading: 2rem;
+  --font-size-heading2: 1.65rem;
+  --font-size-heading1: 1.5rem;
+  --font-size-heading3: 1rem;
+  --font-size-sm: 0.9rem;
+}
+
 * {
   margin: 0;
   padding: 0;
-  font-family: "Inter";
-  --primary_color_bright: #a17dff;
+  font-family: var(--font-family);
   --primary_color: #f8f1ec;
-  --primary_color_light: #c4b2f6;
+  --secondary_color: #ac8efa;
+  --secondary_color_light: #cebff9;
+  --tertiary_color: #feb12f;
+  --tertiary_color_light: #fadcc3;
+  --secondary_color_text: #706052;
+  --color-white: #ffffff;
+  --color-black: #000000;
+}
+body {
+  background: var(--primary_color);
 }
 html ::selection {
-  background-color: var(--primary_color_light);
-  color: #fff;
+  background-color: var(--secondary_color_light);
+  color: var(--color-white);
 }

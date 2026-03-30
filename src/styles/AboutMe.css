@@ -1,190 +1,150 @@
-@import url("https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap");
-* {
-  --primary_color_bright: #a17dff;
-  --primary_color: #f8f1ec;
-  --primary_color_light: #c4b2f6;
-}
-@keyframes fadeEffect {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-hr {
-  margin: 0.5rem auto;
-  background: #feb12f;
-  height: 0.05rem;
-}
 .aboutMe {
-  font-family: "Josefin Sans", sans-serif;
-  line-height: 2rem;
-  margin-top: 3rem;
+  background: linear-gradient(135deg, #b39af3, #e9e3fd, #cebff9);
 }
-.aboutMeText {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  width: 80%;
-  margin: auto;
-}
-.aboutMeText h3 {
-  text-align: center;
-}
-.aboutMeText h3:hover {
-  transform: rotate(5deg) scale(1.3);
-  transition: transform 0.2s linear;
-}
+
 .skills_card {
-  padding: 2.5rem 2.18rem;
+  padding: clamp(1.5rem, 5vw, 5rem);
 }
-.skills_card h3:hover {
-  transform: rotate(5deg) scale(1.3);
-  transition: transform 0.2s linear;
-}
+
 .skills_header > p {
-  font-size: 1.75rem;
+  font-size: clamp(1.4rem, 2.5vw, var(--font-size-heading2));
   text-align: center;
-  font-weight: bold;
+  font-weight: 600;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
-/* Style the tab */
 .tab {
+  display: flex;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  background-color: var(--primary_color);
+  width: clamp(16rem, 40vw, 24rem);
+  margin: clamp(1rem, 3vw, 2rem) auto;
   overflow: hidden;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  background-color: #f1f1f1;
-  box-shadow: 2px 2px 5px 2px rgb(234, 226, 226);
-  width: 24rem;
-  margin: 4rem auto;
 }
 
-/* Style the buttons that are used to open the tab content */
 .tab button {
+  flex: 1;
   background-color: inherit;
-  width: 6rem;
   border: none;
-  outline: none;
+  border-right: 1px solid rgba(162, 142, 126, 0.2);
   cursor: pointer;
-  padding: 0.8rem 1rem;
-  transition: 0.3s;
+  padding: clamp(0.5rem, 1vw, 0.8rem);
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: all 0.25s ease;
 }
 
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background: #feb12f;
+.tab button:last-child {
+  border-right: none;
 }
 
-/* Create an active/current tablink class */
+.tab button:hover,
 .tab button.active {
-  background: #feb12f;
-  color: white;
+  background: var(--tertiary_color);
+  color: var(--color-white);
 }
 
-/* Style the tab content */
 .tabcontent {
   display: none;
-  border-top: none;
-  gap: 2rem;
+  gap: clamp(1.5rem, 3vw, 3rem);
   flex-wrap: wrap;
   justify-content: center;
-  animation: fadeEffect 1s;
+  animation: fadeEffect 0.6s ease;
 }
+
+.tabcontent.active {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  gap: clamp(1rem, 2vw, 2rem);
+  justify-items: center;
+}
+
 .skill {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 0.5rem;
-  align-content: flex-start;
+  position: relative;
+  padding: clamp(0.5rem, 1vw, 1rem);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 }
+
+.skill:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+}
+
 .skill > .skillIcon > img {
-  height: 2rem;
-  width: 2rem;
+  height: clamp(1.5rem, 2.5vw, 2rem);
+  width: clamp(1.5rem, 2.5vw, 2rem);
   object-fit: contain;
+  transition: transform 0.3s ease;
 }
+
 .skill > .skillIcon > img:hover {
-  cursor: pointer;
   transform: rotate(360deg);
-  transition: transform 0.3s linear;
 }
-/* styling for phone screen */
-@media only screen and (max-width: 599px) {
-  .aboutMe__text {
-    height: 40%;
-    margin-top: 8rem;
-    font-size: 0.8rem;
-  }
-  .aboutMe__text > h3 {
-    font-size: 1rem;
-  }
-  .skills_card {
-    margin: -3rem 2rem 2rem 2rem;
-    padding: 0.1rem;
-  }
-  .skill {
-    display: flex;
-    flex-direction: column;
-    gap: 0.3rem;
-  }
-  .skill > .skillIcon > img {
-    height: 1.5rem;
-    width: 1.5rem;
-    object-fit: contain;
-  }
-  .skillName {
-    font-size: 0.8rem;
-  }
+
+.skillName {
+  position: absolute;
+  bottom: -1.8rem;
+  font-size: clamp(0.7rem, 1vw, 0.9rem);
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+
+.skill:hover .skillName {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
   .tab {
     display: none;
   }
-}
-/* styling for tablet screen */
-@media only screen and (max-width: 899px) and (min-width: 600px) {
-  .skill > .skillIcon > img {
-    height: 1.5rem;
-    width: 1.5rem;
-  }
-  .skillName {
-    font-size: 0.8rem;
-  }
-}
-/* styling for large devices  */
-/* @media only screen and (min-width: 1400px) {
-  .aboutMe {
-    line-height: 3rem;
-    margin-top: 5rem;
-  }
-  .aboutMeText {
-    padding: 2rem;
-    font-size: 1.5rem;
-  }
-  .aboutMeText p {
-    margin-top: 1.5rem;
-  }
+
   .skills_header > p {
-    font-size: 2.75rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  .skills_header > p {
+    font-size: 3rem;
   }
 
-  /* Style the tab */
-/* .tab {
-    width: 34rem;
+  .tab {
+    width: 40rem;
     margin: 4rem auto;
-  } */
+  }
 
-/* Style the buttons that are used to open the tab content */
-/* .tab button {
-    width: 8.5rem;
-    padding: 1.2rem 1.5rem;
-  } */
-/* Style the tab content */
-/* .tabcontent {
-    gap: 4rem;
+  .tab button {
+    padding: 1.8rem;
+    font-size: 1.25rem;
+  }
+
+  .tabcontent {
+    gap: 6rem;
   }
   .skill {
-    gap: 1.5rem;
+    gap: 1rem;
   }
+
   .skill > .skillIcon > img {
-    height: 4rem;
-    width: 4rem;
+    height: 3rem;
+    width: 3rem;
   }
-} */
+
+  .skillName {
+    font-size: 1.5rem;
+  }
+}

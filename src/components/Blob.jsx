@@ -63,7 +63,7 @@ function refreshPoints(
   deltas,
   startTimestamp,
   timestamp,
-  endTimestamp
+  endTimestamp,
 ) {
   const t = (timestamp - startTimestamp) / (endTimestamp - startTimestamp);
   const d = deltas.map((d) => [d[0] * t, d[1] * t]);
@@ -76,7 +76,7 @@ export function Blob() {
     center = [500, 400],
     radius = 300;
   const [curPoints, setCurPoints] = useState(
-    getPoints(n_points, center, radius)
+    getPoints(n_points, center, radius),
   );
   const startTimestampRef = useRef(0);
   const nextTimestampRef = useRef(0);
@@ -95,8 +95,8 @@ export function Blob() {
         deltasRef.current,
         startTimestampRef.current,
         timestamp,
-        nextTimestampRef.current
-      )
+        nextTimestampRef.current,
+      ),
     );
     requestRef.current = requestAnimationFrame(animStep);
   };
@@ -108,7 +108,7 @@ export function Blob() {
 
   return (
     <svg id="blob" viewBox="0 0 1000 1000 " xmlns="http://www.w3.org/2000/svg">
-      <path fill="#feb12f" d={getPath(curPoints)}></path>
+      <path fill="var(--tertiary_color)" d={getPath(curPoints)}></path>
     </svg>
   );
 }
