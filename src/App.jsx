@@ -10,9 +10,9 @@ function App() {
     <>
       <NavBar />
       <HomePage />
-      <ProjectList />
-      <AboutMe />
       <WorkExp />
+      <AboutMe />
+      <ProjectList />
       <ContactMe />
     </>
   );
