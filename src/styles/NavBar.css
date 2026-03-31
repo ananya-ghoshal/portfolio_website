@@ -19,6 +19,7 @@
   cursor: pointer;
   position: relative;
   transition: all 0.25s ease;
+  font-size: var(--font-size-heading3);
 }
 .navbar__links > button:hover {
   color: var(--secondary_color_text);

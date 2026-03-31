@@ -51,7 +51,9 @@ function HomePage() {
           <div className="homepage__header__name">
             <span>I'm</span> <span className="name-highlight">Ananya</span>
           </div>
-          <Typewriter text="a software engineer !" delay={200} />
+          <div className="typewriter">
+            <Typewriter text="a software engineer !" delay={200} />
+          </div>
           <div className="homepage__header__details">
             <div
               className="details"

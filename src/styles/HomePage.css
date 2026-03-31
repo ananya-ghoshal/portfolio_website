@@ -70,7 +70,7 @@
   position: relative;
   overflow: hidden;
   background-image: radial-gradient(
-    rgba(172, 142, 250, 0.25) 1px,
+    rgba(88, 72, 130, 0.25) 1px,
     transparent 1px
   );
   background-size: clamp(24px, 3vw, 30px) clamp(24px, 3vw, 30px);
@@ -120,6 +120,10 @@
     0 0 20px var(--secondary_color_light),
     0 0 40px var(--secondary_color_light);
   animation: highlightGlow 2s ease-in-out;
+}
+.typewriter {
+  font-size: 1.5rem;
+  margin-top: clamp(0.5rem, 1.5vw, 1.5rem);
 }
 
 .homepage__header__details {
@@ -186,8 +190,8 @@
 }
 
 .homepage__right .aboutMe__img img {
-  height: clamp(14rem, 40vw, 40rem);
-  width: clamp(14rem, 40vw, 40rem);
+  height: clamp(14rem, 30vw, 30rem);
+  width: clamp(14rem, 30vw, 30rem);
   object-fit: contain;
   animation: float 3s ease-in-out infinite;
 }
