@@ -69,11 +69,11 @@
   background-color: var(--primary_color);
   position: relative;
   overflow: hidden;
-  background-image: radial-gradient(
+  /* background-image: radial-gradient(
     rgba(88, 72, 130, 0.25) 1px,
     transparent 1px
   );
-  background-size: clamp(24px, 3vw, 30px) clamp(24px, 3vw, 30px);
+  background-size: clamp(24px, 3vw, 30px) clamp(24px, 3vw, 30px); */
 }
 
 .homepage .spotlight {
