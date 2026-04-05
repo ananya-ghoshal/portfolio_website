@@ -1,5 +1,4 @@
 .project-list {
-  background: linear-gradient(135deg, #ffffff, #f7f4f2);
   padding: clamp(2rem, 5vw, 5rem);
 }
 
@@ -36,7 +35,7 @@
 }
 
 .project-card {
-  border-radius: 12px;
+  /* border-radius: 12px; */
   overflow: hidden;
   display: flex;
   flex-direction: column;

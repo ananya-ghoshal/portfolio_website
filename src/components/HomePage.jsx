@@ -40,84 +40,41 @@ function HomePage() {
   }, []);
   return (
     <>
-      <div
-        ref={cardRef}
-        className="homepage"
-        id="homepage"
-        onMouseMove={handleMouseMove}
-      >
+      <div ref={cardRef} className="hero" onMouseMove={handleMouseMove}>
         <div className="spotlight"></div>
-        <div className="homepage__left">
-          <div className="homepage__header__name">
-            <span>I'm</span> <span className="name-highlight">Ananya</span>
-          </div>
-          <div className="typewriter">
-            <Typewriter text="a software engineer !" delay={200} />
-          </div>
-          <div className="homepage__header__details">
-            <div
-              className="details"
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                gap: "0.5rem",
-              }}
-            >
-              <p>
-                A Computer Science graduate with around 5 years of experience
-                working on enterprise-grade applications from design to
-                implementation.
-              </p>
-            </div>
-            <div className="homepageButtons">
-              <a href={Resume} target="_blank">
-                <button className="CV">RESUME</button>
-              </a>
-            </div>
-          </div>
+
+        <div className="hero__bgText">Hey, there</div>
+
+        <div className="hero__imageWrapper">
+          <Blob />
+          <img src={ProfileImage} alt="profile" />
         </div>
-        <div className="homepage__right">
-          <div className="aboutMe__img">
-            <Blob />
-            <img src={ProfileImage} alt=""></img>
+        <div className="hero__content">
+          <div className="hero__left">
+            <h1 className="name">
+              <span className="name__prefix">I AM</span>
+              <span className="name__main">
+                <Typewriter text="ANANYA" delay={300} />
+              </span>
+            </h1>
+          </div>
+
+          <div className="hero__right">
+            <p className="role">
+              <Typewriter text="SOFTWARE ENGINEER" delay={200} />
+            </p>
+
+            <p className="desc">
+              Specializing in Frontend Development, Backend Systems, and
+              Conversational AI Flows.
+            </p>
+
+            <a href={Resume} target="_blank">
+              <button className="CV">RESUME</button>
+            </a>
           </div>
         </div>
       </div>
-      {/* <div className="homepage" id="homepage">
-        <div className="homepage__left">
-          <div className="homepage__header__name">
-            I'm <span className="name-highlight">Ananya</span>
-          </div>
-          <Typewriter text="a software engineer !" delay={200} />
-          <div className="homepage__header__details">
-            <div
-              className="details"
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                gap: "0.5rem",
-              }}
-            >
-              <p>
-                A Computer Science graduate with around 5 years of experience
-                working on enterprise-grade applications from design to
-                implementation.
-              </p>
-            </div>
-            <div className="homepageButtons">
-              <a href={Resume} target="_blank">
-                <button className="CV">RESUME</button>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className="homepage__right">
-          <div className="aboutMe__img">
-            <Blob />
-            <img src={ProfileImage} alt=""></img>
-          </div>
-        </div>
-      </div> */}
     </>
   );
 }

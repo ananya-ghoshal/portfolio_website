@@ -7,13 +7,14 @@
   position: sticky;
   top: 0rem;
   z-index: 99;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(248, 248, 248, 0.5);
+  /* rgba(255, 255, 255, 0.01) */
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 }
 .navbar__links > button {
   background: none;
-  color: var(--color-black);
+  color: var(--secondary_color_text);
   font-style: bold;
   border: none;
   cursor: pointer;
@@ -22,7 +23,7 @@
   font-size: var(--font-size-heading3);
 }
 .navbar__links > button:hover {
-  color: var(--secondary_color_text);
+  color: var(--color-black);
   transform: translateY(-2px);
 }
 .navbar__links > button::after {

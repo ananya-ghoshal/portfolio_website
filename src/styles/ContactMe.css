@@ -7,7 +7,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--secondary_color);
+  background-color: var(--secondary_color_med);
   cursor: pointer;
 }
 
@@ -36,16 +36,61 @@
   text-shadow: 0 0 10px white;
   font-size: var(--font-size-heading2);
 }
+.emailWrapper {
+  position: relative;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+}
+
+.emailWrapper img {
+  height: 3rem;
+  width: 3rem;
+  padding-bottom: 0.2rem;
+}
+
+.emailWrapper img:hover {
+  transform: rotate(360deg);
+  transition: transform 0.5s linear;
+  cursor: pointer;
+}
+.tooltip {
+  position: absolute;
+  bottom: -2.5rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  background: var(--color-white);
+  color: var(--color-black);
+  font-size: 0.75rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.25s ease;
+}
+
+.tooltip.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
 .icons {
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
-.icons > a > img {
-  height: 1.2rem;
-  width: 1.2rem;
-  padding: 0.5rem;
+.icons span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
 }
-.icons > a > img:hover {
+.icons > span > a > img {
+  height: 2rem;
+  width: 2rem;
+}
+.icons > span > a > img:hover {
   transform: rotate(360deg);
   transition: transform 0.5s linear;
   cursor: pointer;
@@ -60,9 +105,13 @@
     padding-bottom: 1rem;
   }
 
-  .icons > a > img {
-    height: 2rem;
-    width: 2rem;
+  .icons > span > a > img {
+    height: 2.5rem;
+    width: 2.5rem;
     padding: 1rem;
+  }
+  .emailWrapper img {
+    height: 3.5rem;
+    width: 3.5rem;
   }
 }
