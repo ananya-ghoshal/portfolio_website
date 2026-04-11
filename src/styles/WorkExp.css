@@ -19,12 +19,12 @@
   width: 80%;
   height: 200%;
   transform: translate(-50%, -50%);
-  background: radial-gradient(
+  /* background: radial-gradient(
     circle,
     rgb(207, 190, 251) 0%,
     rgb(250, 249, 252) 40%,
     transparent 70%
-  );
+  ); */
   filter: blur(20px);
   z-index: -1;
 }
